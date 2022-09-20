@@ -1,0 +1,8 @@
+#!/bin/bash -ex
+cd /home/webbackend
+
+sudo chmod +x /home/webbackend/index.js
+sudo chmod +x /home/webbackend/package.json
+
+sudo npm install
+sudo npm install -g nodemon

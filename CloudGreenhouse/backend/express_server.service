@@ -1,0 +1,11 @@
+[Unit]
+Description=express_server
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/sudo /usr/bin/node /home/webbackend/index.js
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

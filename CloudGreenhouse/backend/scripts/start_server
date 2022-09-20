@@ -1,0 +1,9 @@
+#!/bin/bash -ex
+cd /home/webbackend
+sudo cp /home/webbackend/express_server.service /etc/systemd/system
+
+sudo systemctl disable --now express_server
+
+sudo systemctl daemon-reload
+sudo systemctl enable express_server
+sudo systemctl start express_server

@@ -1,0 +1,94 @@
+$color-primary: #55c57a;
+$text-color: black;
+$shadow-color: rgba(171, 235, 198, 0.9);
+$color-box: white;
+$button-color: white;
+$button-background-normal: #ff936d;
+
+.controlboard {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 0 auto;
+  justify-content: space-between;
+  overflow: hide;
+  margin: 10px;
+  flex-wrap: nowrap;
+  border-radius: 25px;
+  background-color: white;
+}
+
+.controlbox {
+  width: 14%;
+  aspect-ratio: 3/2;
+  flex: 0 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $color-box;
+  justify-content: center;
+  border: 3px solid $color-box;
+  border-radius: 25px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  box-shadow: 0px 0px 35px rgba(2, 2, 3, 0.01), 0px 0px 35px $shadow-color;
+  overflow: hidden;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:first-child {
+    margin-left: 100px;
+  }
+
+  &:last-child {
+    margin-right: 100px;
+  }
+
+  .header {
+    // width: 100%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-box;
+
+    .title {
+      font-weight: bold;
+      font-size: 20px;
+      color: $text-color;
+      margin-top: 90px;
+    }
+  }
+
+  .button {
+    height: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+}
+
+.sendbutton {
+  height: 50px;
+  width: 120px;
+  font-weight: bold;
+  border-radius: 100px;
+  font-size: 14px;
+  background: $button-background-normal;
+  box-shadow: 0 3px rgba(194, 185, 182, 0.5);
+  border: $button-color;
+
+  &:hover {
+    cursor: pointer;
+  }
+  &:active {
+    transform: translateY(2px);
+    box-shadow: 0 1px rgba(194, 185, 182, 0.5);
+  }
+}

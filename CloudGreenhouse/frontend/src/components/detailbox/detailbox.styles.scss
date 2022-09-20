@@ -1,0 +1,53 @@
+$color-primary: white;
+$text-color: black;
+$shadow-color: rgba(171, 235, 198, 0.7);
+
+.detailbox {
+  width: 15%;
+  aspect-ratio: 1/1;
+  flex: 0 0 auto;
+  flex-direction: column;
+  display: flex;
+  background-color: $color-primary;
+  border: 3px solid $color-primary;
+  border-radius: 25px;
+  margin: 30px;
+  box-shadow: 0px 0px 35px rgba(2, 2, 3, 0.01), 0px 0px 37px $shadow-color;
+  overflow: hidden;
+  background-color: $color-primary;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-primary;
+
+    .title {
+      font-weight: bold;
+      font-size: 20px;
+      color: $text-color;
+      margin-bottom: 48px;
+    }
+  }
+
+  .value-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 45px;
+    background-color: $color-primary;
+  }
+
+  .value {
+    font-weight: bold;
+    font-size: 50px;
+    color: $text-color;
+    margin-top: 45px;
+  }
+}

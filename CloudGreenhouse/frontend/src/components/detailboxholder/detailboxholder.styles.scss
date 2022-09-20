@@ -1,0 +1,10 @@
+.detailboxholder {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 0 auto;
+  justify-content: space-between;
+  overflow: hide;
+  flex-wrap: nowrap;
+  background-color: white;
+}
